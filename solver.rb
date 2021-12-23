@@ -7,4 +7,12 @@ class Solver
       return num * factorial(num - 1)
     end
   end
+
+  def reverse(string)
+    string.reverse
+  end
 end
+
+
+inst = Solver.new
+puts inst.reverse('hello')
