@@ -25,6 +25,3 @@ class Solver
     string.reverse
   end
 end
-
-inst = Solver.new
-puts inst.reverse('hello')
