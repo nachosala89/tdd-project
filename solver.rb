@@ -26,5 +26,3 @@ class Solver
   end
 end
 
-inst = Solver.new
-puts inst.reverse('hello')
