@@ -19,4 +19,12 @@ class Solver
       "#{num}"
      end
   end
+
+  def reverse(string)
+    string.reverse
+  end
 end
+
+
+inst = Solver.new
+puts inst.reverse('hello')
