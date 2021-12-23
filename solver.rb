@@ -1,30 +1,30 @@
 class Solver
   def factorial(num)
-    return raise StandardError.new 'Number is negative' if num.negative?
-    if num == 0
-      return 1
+    return raise StandardError, 'Number is negative' if num.negative?
+
+    if num.zero?
+      1
     else
-      return num * factorial(num - 1)
+      num * factorial(num - 1)
     end
-  end 
+  end
 
   def fizzbuzz(num)
-     if num % 5 == 0 && num % 3 == 0
+    if (num % 5).zero? && (num % 3).zero?
       'fizzbuzz'
-     elsif num % 3 == 0
+    elsif (num % 3).zero?
       'fizz'
-     elsif num % 5 == 0
+    elsif (num % 5).zero?
       'buzz'
-     else 
-      "#{num}"
-     end
+    else
+      num.to_s
+    end
   end
 
   def reverse(string)
     string.reverse
   end
 end
-
 
 inst = Solver.new
 puts inst.reverse('hello')

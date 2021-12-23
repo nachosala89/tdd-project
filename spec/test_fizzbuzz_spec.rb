@@ -28,5 +28,4 @@ describe Solver do
       expect(solver.fizzbuzz(7)).to eq '7'
     end
   end
-
 end
