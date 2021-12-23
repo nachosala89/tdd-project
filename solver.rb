@@ -25,4 +25,3 @@ class Solver
     string.reverse
   end
 end
-
