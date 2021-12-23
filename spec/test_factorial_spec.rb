@@ -18,7 +18,7 @@ describe Solver do
   context 'the input is negative number' do
     it 'should throw an exception' do
       solver = Solver.new
-      expect(solver.factorial(-5)).to raise_error("Number is negative")
+      expect{solver.factorial(-5)}.to raise_error(StandardError)
     end
   end
 end
