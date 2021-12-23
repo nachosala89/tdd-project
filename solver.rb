@@ -6,5 +6,5 @@ class Solver
     else
       return num * factorial(num - 1)
     end
-  end
+  end 
 end
